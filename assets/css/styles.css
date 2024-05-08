@@ -248,18 +248,75 @@ a {
     background-color: white;
 }
 
-.sub {
-    border: 3px solid orange;
+
+.card {
+    border-radius: 10px;
+    padding: 20px 10px;
 }
 
-.items {
-    font-size: 1.4rem;
-    text-align: center;
-    border-radius: 5px;
-    
+.card-item {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card-title {
-    font-family: roboto;
     font-weight: 900;
+}
+
+.card-content {
+    width: 100%;
+    margin: 5px 0 10px 0;
+    font-size: 1rem;
+    color: grey;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    height: 100%;
+    opacity: .5;
+}
+
+.card-icons svg {
+    width: 20px;
+    
+}
+
+.announcement-title {
+    font-weight: 900;
+    font-size: .8rem;
+}
+
+.announcement-content {
+    width: 100%;
+    margin: 5px 0 10px 0;
+    font-size: .7rem;
+    color: grey;
+}
+
+hr {
+    margin: 20px 0 20px 0;
+}
+
+.trending-content {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px;
+}
+
+.trending-text {
+    font-size: .7rem;
+    color: grey;
+}
+
+.trending-tag {
+    font-weight: 900;
+    margin: 0 0 3px 0;
+    font-size: .9rem;
+}
+.trending-img img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
