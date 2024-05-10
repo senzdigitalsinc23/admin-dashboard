@@ -23,13 +23,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-container {
     display: grid;
-    grid-template: repeat(4, 25vh) / repeat(4, 25%) ;
+    grid-template: repeat(12, 10vh) / repeat(4, 25%) ;
     width: 100%;
 }
 
+.labels {
+    display: grid;
+    grid-template: repeat(6, 1.5vh) / repeat(11, 10%);
+    grid-area: 1 / 1 / 2 / 19;
+    
+}
+
+.announcements-label {
+    grid-area: 3 / 9 / 4 / 11;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.your-projects {
+    grid-area: 3 / 1 / 4 / 5;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+
 /* Sidebar styling */
 .sidebar {
-    grid-area: 1 / 1 / 5 / 2;
+    grid-area: 1 / 1 / 18 / 2;
     background-color: #2563eb;
     padding: 10px;
 }
@@ -83,7 +103,7 @@ a {
 .header {
     grid-area: 1 / 2 / 2 / 5;
     background-color: #fff;
-    height: 20vh;
+    height: 120px;
     
 }
 
@@ -165,6 +185,7 @@ a {
     gap: 5px;
     width: 40vh;
     justify-content: space-between;
+    
 }
 
 .control-buttons button {
@@ -175,11 +196,18 @@ a {
     border: 1px solid #2563eb;
     border-radius: 15px;
     font-weight: 900;
+    cursor: pointer;
+}
+
+.control-buttons button:hover {
+    background-color: aquamarine;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid aquamarine;
 }
 
 /* Main Content Area */
 .main-content {
-    grid-area: 2 / 2 / 5 / 5;
+    grid-area: 3 / 2 / 4 / 5;
     margin: 0px 0 0 20px;
     display: grid;
     grid-template: repeat(15, 5vh) / repeat(20, 5%);
@@ -187,7 +215,7 @@ a {
 }
 
 .super-cool-project {
-    grid-area: 1 / 1 / 5 / 8;
+    grid-area: 2 / 1 / 6 / 8;
     margin: 0 10px 10px 0;
     padding: 6px;
     border-left: 7px solid orange;
@@ -195,7 +223,7 @@ a {
 }
 .less-cool-project {
     border-left: 7px solid orange;
-    grid-area: 1 / 8 / 5 / 15;
+    grid-area: 2 / 8 / 6 / 15;
     margin: 0 10px 10px 0;
     padding: 10px;
     background-color: white;
@@ -203,7 +231,7 @@ a {
 }
 
 .imposible-app {
-    grid-area: 5 / 1 / 9 / 8;
+    grid-area: 6 / 1 / 10 / 8;
     margin: 0 10px 10px 0;
     padding: 10px;
     border-left: 7px solid orange;
@@ -211,7 +239,7 @@ a {
 }
 
 .easy-peasy-app {
-    grid-area: 5 / 8 / 9 / 15;
+    grid-area: 6 / 8 / 10 / 15;
     margin: 0 10px 10px 0;
     padding: 10px;
     border-left: 7px solid orange;
@@ -219,7 +247,7 @@ a {
 }
 
 .add-blocker {
-    grid-area: 9 / 1 / 13 / 8;
+    grid-area: 10 / 1 / 14 / 8;
     margin: 0 10px 10px 0;
     padding: 10px;
     border-left: 7px solid orange;
@@ -227,7 +255,7 @@ a {
 }
 
 .money-maker {
-    grid-area: 9 / 8 / 13 / 15;
+    grid-area: 10 / 8 / 14 / 15;
     margin: 0 10px 10px 0;
     padding: 10px;
     border-left: 7px solid orange;
@@ -235,14 +263,14 @@ a {
 }
 
 .announcements{
-     grid-area: 1 / 15 / 7 / 20;
+     grid-area: 2 / 15 / 8 / 20;
      margin: 0 10px 10px 0;
     padding: 10px;
     background-color: white;
 }
 
 .trending {
-    grid-area: 7 / 15 / 13 / 20;
+    grid-area: 8 / 15 / 14 / 20;
     margin: 0 10px 10px 0;
     padding: 10px;
     background-color: white;
@@ -265,7 +293,7 @@ a {
 
 .card-content {
     width: 100%;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 ;
     font-size: 1rem;
     color: grey;
 }
@@ -296,7 +324,7 @@ a {
 }
 
 hr {
-    margin: 20px 0 20px 0;
+    margin: 15px 0 15px 0;
 }
 
 .trending-content {
