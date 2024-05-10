@@ -13,6 +13,7 @@
 body {
     margin: 0;
     background-color: #e2e8f0;
+    position: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,8 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-container {
     display: grid;
-    grid-template: repeat(12, 10vh) / repeat(4, 25%) ;
-    width: 100%;
+    grid-template: repeat(12, 8.5vh) / repeat(4, 25%) ;
 }
 
 .labels {
@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-area: 1 / 1 / 18 / 2;
     background-color: #2563eb;
     padding: 10px;
+    height: 100vh;
 }
 
 .sidebar ul {
@@ -208,7 +209,7 @@ a {
 /* Main Content Area */
 .main-content {
     grid-area: 3 / 2 / 4 / 5;
-    margin: 0px 0 0 20px;
+    margin: 30px 0 0 20px;
     display: grid;
     grid-template: repeat(15, 5vh) / repeat(20, 5%);
     grid-gap: 5px 1px;
